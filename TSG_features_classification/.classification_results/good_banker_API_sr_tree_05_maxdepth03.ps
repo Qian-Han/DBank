@@ -1,0 +1,1380 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.40.1 (20161225.0304)
+%%Title: Tree
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 1238 501
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 1202 465 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% 0
+gsave
+0.069767 0.75109 0.89804 nodecolor
+newpath 680.8837 457 moveto
+554.8078 457 lineto
+554.8078 393 lineto
+680.8837 393 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 680.8837 457 moveto
+554.8078 457 lineto
+554.8078 393 lineto
+680.8837 393 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+564.457 441.8 moveto 106.7773 (java.util <= 1590.0) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+573.8462 427.8 moveto 87.999 (samples = 3653) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+562.5771 413.8 moveto 110.5371 (value = [2698, 955]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+568.0117 399.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 1
+gsave
+0.56977 0.75109 0.89804 nodecolor
+newpath 544.6096 357 moveto
+387.0819 357 lineto
+387.0819 293 lineto
+544.6096 293 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 544.6096 357 moveto
+387.0819 357 lineto
+387.0819 293 lineto
+544.6096 293 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+394.9639 341.8 moveto 141.7637 (android.telephony <= 4.5) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+422.1025 327.8 moveto 87.4863 (samples = 1189) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+414.0771 313.8 moveto 103.5371 (value = [334, 855]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+404.7393 299.8 moveto 122.2129 (class = GOODWARE) alignedtext
+grestore
+% 0->1
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 568.9153 392.8089 moveto
+554.4057 383.2632 538.382 372.7213 523.3801 362.8516 curveto
+stroke
+0 0 0 edgecolor
+newpath 524.9623 359.703 moveto
+514.6845 357.1308 lineto
+521.115 365.5509 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 524.9623 359.703 moveto
+514.6845 357.1308 lineto
+521.115 365.5509 lineto
+closepath stroke
+0 0 0 edgecolor
+14 /Times-Roman set_font
+506.7656 377.4149 moveto 25.9424 (True) alignedtext
+grestore
+% 136
+gsave
+0.069767 0.75109 0.89804 nodecolor
+newpath 826.7927 357 moveto
+684.8987 357 lineto
+684.8987 293 lineto
+826.7927 293 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 826.7927 357 moveto
+684.8987 357 lineto
+684.8987 293 lineto
+826.7927 293 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+693.1226 341.8 moveto 125.4463 (android.system <= 4.5) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+711.8462 327.8 moveto 87.999 (samples = 2464) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+700.5771 313.8 moveto 110.5371 (value = [2364, 100]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+706.0117 299.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 0->136
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 662.2694 392.8089 moveto
+675.3194 383.3524 689.7186 372.9182 703.2284 363.1285 curveto
+stroke
+0 0 0 edgecolor
+newpath 705.4615 365.8327 moveto
+711.5053 357.1308 lineto
+701.354 360.1644 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 705.4615 365.8327 moveto
+711.5053 357.1308 lineto
+701.354 360.1644 lineto
+closepath stroke
+0 0 0 edgecolor
+14 /Times-Roman set_font
+692.7877 377.6181 moveto 29.5518 (False) alignedtext
+grestore
+% 2
+gsave
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 297.5063 257 moveto
+178.1851 257 lineto
+178.1851 193 lineto
+297.5063 193 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+186.0156 241.8 moveto 103.6602 (android.net <= 0.5) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+197.3462 227.8 moveto 80.999 (samples = 552) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+186.0771 213.8 moveto 103.5371 (value = [286, 266]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+188.0117 199.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 1->2
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 392.7643 292.9467 moveto
+365.2668 280.8865 334.1073 267.22 306.9805 255.3223 curveto
+stroke
+0 0 0 edgecolor
+newpath 308.1299 252.0046 moveto
+297.5662 251.1932 lineto
+305.3182 258.4151 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 308.1299 252.0046 moveto
+297.5662 251.1932 lineto
+305.3182 258.4151 lineto
+closepath stroke
+grestore
+% 99
+gsave
+0.56977 0.75109 0.89804 nodecolor
+newpath 535.0588 257 moveto
+396.6326 257 lineto
+396.6326 193 lineto
+535.0588 193 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 535.0588 257 moveto
+396.6326 257 lineto
+396.6326 193 lineto
+535.0588 193 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+410.5156 241.8 moveto 110.6602 (android.net <= 56.0) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+425.3462 227.8 moveto 80.999 (samples = 637) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+417.5771 213.8 moveto 96.5371 (value = [48, 589]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+404.7393 199.8 moveto 122.2129 (class = GOODWARE) alignedtext
+grestore
+% 1->99
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 465.8457 292.8089 moveto
+465.8457 284.6906 465.8457 275.8517 465.8457 267.3186 curveto
+stroke
+0 0 0 edgecolor
+newpath 469.3458 267.1307 moveto
+465.8457 257.1308 lineto
+462.3458 267.1308 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 469.3458 267.1307 moveto
+465.8457 257.1308 lineto
+462.3458 267.1308 lineto
+closepath stroke
+grestore
+% 3
+gsave
+0.56977 0.75109 0.89804 nodecolor
+newpath 145.5374 157 moveto
+.154 157 lineto
+.154 93 lineto
+145.5374 93 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 145.5374 157 moveto
+.154 157 lineto
+.154 93 lineto
+145.5374 93 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+8 141.8 moveto 129.6914 (java.lang.reflect <= 6.5) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+32.3462 127.8 moveto 80.999 (samples = 212) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+24.5771 113.8 moveto 96.5371 (value = [34, 178]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+11.7393 99.8 moveto 122.2129 (class = GOODWARE) alignedtext
+grestore
+% 2->3
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 184.7304 192.8089 moveto
+168.8327 183.174 151.2605 172.5241 134.8445 162.575 curveto
+stroke
+0 0 0 edgecolor
+newpath 136.2275 159.3206 moveto
+125.8615 157.1308 lineto
+132.5994 165.307 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 136.2275 159.3206 moveto
+125.8615 157.1308 lineto
+132.5994 165.307 lineto
+closepath stroke
+grestore
+% 32
+gsave
+0.069767 0.75109 0.89804 nodecolor
+newpath 311.5062 157 moveto
+164.1852 157 lineto
+164.1852 93 lineto
+311.5062 93 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 311.5062 157 moveto
+164.1852 157 lineto
+164.1852 93 lineto
+311.5062 93 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+172.0156 141.8 moveto 131.6602 (android.webkit <= 12.5) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+197.3462 127.8 moveto 80.999 (samples = 340) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+189.5771 113.8 moveto 96.5371 (value = [252, 88]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+188.0117 99.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 2->32
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 237.8457 192.8089 moveto
+237.8457 184.6906 237.8457 175.8517 237.8457 167.3186 curveto
+stroke
+0 0 0 edgecolor
+newpath 241.3458 167.1307 moveto
+237.8457 157.1308 lineto
+234.3458 167.1308 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 241.3458 167.1307 moveto
+237.8457 157.1308 lineto
+234.3458 167.1308 lineto
+closepath stroke
+grestore
+% 4
+gsave
+0 0 0.75294 nodecolor
+newpath 63.8457 43 moveto
+9.8457 43 lineto
+9.8457 7 lineto
+63.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 63.8457 43 moveto
+9.8457 43 lineto
+9.8457 7 lineto
+63.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+26.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 3->4
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 61.2569 92.8089 moveto
+56.5859 79.8338 51.2523 65.0183 46.7645 52.5521 curveto
+stroke
+0 0 0 edgecolor
+newpath 50.0558 51.3616 moveto
+43.3755 43.1382 lineto
+43.4696 53.7326 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 50.0558 51.3616 moveto
+43.3755 43.1382 lineto
+43.4696 53.7326 lineto
+closepath stroke
+grestore
+% 23
+gsave
+0 0 0.75294 nodecolor
+newpath 135.8457 43 moveto
+81.8457 43 lineto
+81.8457 7 lineto
+135.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 135.8457 43 moveto
+81.8457 43 lineto
+81.8457 7 lineto
+135.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+98.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 3->23
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 84.4345 92.8089 moveto
+89.1055 79.8338 94.4391 65.0183 98.9269 52.5521 curveto
+stroke
+0 0 0 edgecolor
+newpath 102.2218 53.7326 moveto
+102.3159 43.1382 lineto
+95.6356 51.3616 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 102.2218 53.7326 moveto
+102.3159 43.1382 lineto
+95.6356 51.3616 lineto
+closepath stroke
+grestore
+% 33
+gsave
+0 0 0.75294 nodecolor
+newpath 210.8457 43 moveto
+156.8457 43 lineto
+156.8457 7 lineto
+210.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 210.8457 43 moveto
+156.8457 43 lineto
+156.8457 7 lineto
+210.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+173.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 32->33
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 220.4625 92.8089 moveto
+213.3866 79.7054 205.2971 64.7247 198.5243 52.1825 curveto
+stroke
+0 0 0 edgecolor
+newpath 201.4716 50.2743 moveto
+193.6403 43.1382 lineto
+195.3122 53.6003 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 201.4716 50.2743 moveto
+193.6403 43.1382 lineto
+195.3122 53.6003 lineto
+closepath stroke
+grestore
+% 88
+gsave
+0 0 0.75294 nodecolor
+newpath 282.8457 43 moveto
+228.8457 43 lineto
+228.8457 7 lineto
+282.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 282.8457 43 moveto
+228.8457 43 lineto
+228.8457 7 lineto
+282.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+245.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 32->88
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 243.6401 92.8089 moveto
+245.9294 80.0908 248.5369 65.6043 250.7525 53.2954 curveto
+stroke
+0 0 0 edgecolor
+newpath 254.2539 53.6001 moveto
+252.5808 43.1382 lineto
+247.3646 52.36 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 254.2539 53.6001 moveto
+252.5808 43.1382 lineto
+247.3646 52.36 lineto
+closepath stroke
+grestore
+% 100
+gsave
+0.56977 0.75109 0.89804 nodecolor
+newpath 468.0588 157 moveto
+329.6326 157 lineto
+329.6326 93 lineto
+468.0588 93 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 468.0588 157 moveto
+329.6326 157 lineto
+329.6326 93 lineto
+468.0588 93 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+338.4604 141.8 moveto 120.7705 (android.app <= 292.0) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+358.3462 127.8 moveto 80.999 (samples = 607) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+350.5771 113.8 moveto 96.5371 (value = [27, 580]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+337.7393 99.8 moveto 122.2129 (class = GOODWARE) alignedtext
+grestore
+% 99->100
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 444.2777 192.8089 moveto
+438.4798 184.1553 432.1333 174.683 426.0712 165.635 curveto
+stroke
+0 0 0 edgecolor
+newpath 428.8472 163.4903 moveto
+420.3733 157.1308 lineto
+423.0318 167.3866 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 428.8472 163.4903 moveto
+420.3733 157.1308 lineto
+423.0318 167.3866 lineto
+closepath stroke
+grestore
+% 131
+gsave
+0.069767 0.75109 0.89804 nodecolor
+newpath 603.9473 157 moveto
+485.7441 157 lineto
+485.7441 93 lineto
+603.9473 93 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 603.9473 157 moveto
+485.7441 157 lineto
+485.7441 93 lineto
+603.9473 93 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+493.7949 141.8 moveto 102.1016 (java.math <= 24.0) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+507.8462 127.8 moveto 73.999 (samples = 30) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+503.5771 113.8 moveto 82.5371 (value = [21, 9]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+495.0117 99.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 99->131
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 491.2767 192.8089 moveto
+498.254 183.9769 505.905 174.2921 513.1857 165.0759 curveto
+stroke
+0 0 0 edgecolor
+newpath 516.0098 167.1473 moveto
+519.4624 157.1308 lineto
+510.517 162.8079 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 516.0098 167.1473 moveto
+519.4624 157.1308 lineto
+510.517 162.8079 lineto
+closepath stroke
+grestore
+% 101
+gsave
+0 0 0.75294 nodecolor
+newpath 378.8457 43 moveto
+324.8457 43 lineto
+324.8457 7 lineto
+378.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 378.8457 43 moveto
+324.8457 43 lineto
+324.8457 7 lineto
+378.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+341.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 100->101
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 383.7159 92.8089 moveto
+377.6176 79.8338 370.6543 65.0183 364.7952 52.5521 curveto
+stroke
+0 0 0 edgecolor
+newpath 367.7919 50.6997 moveto
+360.3707 43.1382 lineto
+361.4567 53.6773 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 367.7919 50.6997 moveto
+360.3707 43.1382 lineto
+361.4567 53.6773 lineto
+closepath stroke
+grestore
+% 130
+gsave
+0 0 0.75294 nodecolor
+newpath 450.8457 43 moveto
+396.8457 43 lineto
+396.8457 7 lineto
+450.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 450.8457 43 moveto
+396.8457 43 lineto
+396.8457 7 lineto
+450.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+413.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 100->130
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 406.8935 92.8089 moveto
+410.1051 79.9623 413.7678 65.3115 416.8649 52.9231 curveto
+stroke
+0 0 0 edgecolor
+newpath 420.2812 53.6886 moveto
+419.3111 43.1382 lineto
+413.4902 51.9908 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 420.2812 53.6886 moveto
+419.3111 43.1382 lineto
+413.4902 51.9908 lineto
+closepath stroke
+grestore
+% 132
+gsave
+0 0 0.75294 nodecolor
+newpath 534.8457 43 moveto
+480.8457 43 lineto
+480.8457 7 lineto
+534.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 534.8457 43 moveto
+480.8457 43 lineto
+480.8457 7 lineto
+534.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+497.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 131->132
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 532.935 92.8089 moveto
+528.1342 79.8338 522.6525 65.0183 518.04 52.5521 curveto
+stroke
+0 0 0 edgecolor
+newpath 521.3095 51.3023 moveto
+514.5568 43.1382 lineto
+514.7445 53.7314 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 521.3095 51.3023 moveto
+514.5568 43.1382 lineto
+514.7445 53.7314 lineto
+closepath stroke
+grestore
+% 135
+gsave
+0 0 0.75294 nodecolor
+newpath 606.8457 43 moveto
+552.8457 43 lineto
+552.8457 7 lineto
+606.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 606.8457 43 moveto
+552.8457 43 lineto
+552.8457 7 lineto
+606.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+569.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 131->135
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 556.1126 92.8089 moveto
+560.6089 79.9623 565.7367 65.3115 570.0726 52.9231 curveto
+stroke
+0 0 0 edgecolor
+newpath 573.4973 53.7331 moveto
+573.4973 43.1382 lineto
+566.8902 51.4206 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 573.4973 53.7331 moveto
+573.4973 43.1382 lineto
+566.8902 51.4206 lineto
+closepath stroke
+grestore
+% 137
+gsave
+0.069767 0.75109 0.89804 nodecolor
+newpath 838.1095 257 moveto
+673.5819 257 lineto
+673.5819 193 lineto
+838.1095 193 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 838.1095 257 moveto
+673.5819 257 lineto
+673.5819 193 lineto
+838.1095 193 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+681.4639 241.8 moveto 148.7637 (android.telephony <= 91.5) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+711.8462 227.8 moveto 87.999 (samples = 2443) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+704.0771 213.8 moveto 103.5371 (value = [2363, 80]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+706.0117 199.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 136->137
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 755.8457 292.8089 moveto
+755.8457 284.6906 755.8457 275.8517 755.8457 267.3186 curveto
+stroke
+0 0 0 edgecolor
+newpath 759.3458 267.1307 moveto
+755.8457 257.1308 lineto
+752.3458 267.1308 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 759.3458 267.1307 moveto
+755.8457 257.1308 lineto
+752.3458 267.1308 lineto
+closepath stroke
+grestore
+% 236
+gsave
+0.56977 0.75109 0.89804 nodecolor
+newpath 1071.5062 257 moveto
+910.1852 257 lineto
+910.1852 193 lineto
+1071.5062 193 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 1071.5062 257 moveto
+910.1852 257 lineto
+910.1852 193 lineto
+1071.5062 193 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+918.0156 241.8 moveto 145.6602 (android.widget <= 2781.0) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+953.8462 227.8 moveto 73.999 (samples = 21) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+949.5771 213.8 moveto 82.5371 (value = [1, 20]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+929.7393 199.8 moveto 122.2129 (class = GOODWARE) alignedtext
+grestore
+% 136->236
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 826.6721 294.8611 moveto
+851.5873 284.2589 879.8457 272.234 905.8093 261.1857 curveto
+stroke
+0 0 0 edgecolor
+newpath 907.4295 264.3 moveto
+915.2606 257.1639 lineto
+904.6886 257.8589 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 907.4295 264.3 moveto
+915.2606 257.1639 lineto
+904.6886 257.8589 lineto
+closepath stroke
+grestore
+% 138
+gsave
+0.069767 0.75109 0.89804 nodecolor
+newpath 783.6096 157 moveto
+622.0818 157 lineto
+622.0818 93 lineto
+783.6096 93 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 783.6096 157 moveto
+622.0818 157 lineto
+622.0818 93 lineto
+783.6096 93 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+630.2139 141.8 moveto 145.2637 (android.app.admin <= 1.5) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+658.8462 127.8 moveto 87.999 (samples = 2397) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+651.0771 113.8 moveto 103.5371 (value = [2340, 57]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+653.0117 99.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 137->138
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 738.7844 192.8089 moveto
+734.2926 184.3337 729.3845 175.0733 724.6792 166.1952 curveto
+stroke
+0 0 0 edgecolor
+newpath 727.6505 164.3275 moveto
+719.875 157.1308 lineto
+721.4655 167.6055 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 727.6505 164.3275 moveto
+719.875 157.1308 lineto
+721.4655 167.6055 lineto
+closepath stroke
+grestore
+% 229
+gsave
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 952.1164 157 moveto
+801.575 157 lineto
+801.575 93 lineto
+952.1164 93 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+809.4604 141.8 moveto 134.7705 (android.view <= 2357.0) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+839.8462 127.8 moveto 73.999 (samples = 46) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+832.0771 113.8 moveto 89.5371 (value = [23, 23]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+827.0117 99.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 137->229
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 794.7969 192.8089 moveto
+806.0234 183.5308 818.3887 173.3116 830.0389 163.6833 curveto
+stroke
+0 0 0 edgecolor
+newpath 832.4889 166.1992 moveto
+837.9675 157.1308 lineto
+828.0295 160.8034 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 832.4889 166.1992 moveto
+837.9675 157.1308 lineto
+828.0295 160.8034 lineto
+closepath stroke
+grestore
+% 139
+gsave
+0 0 0.75294 nodecolor
+newpath 684.8457 43 moveto
+630.8457 43 lineto
+630.8457 7 lineto
+684.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 684.8457 43 moveto
+630.8457 43 lineto
+630.8457 7 lineto
+684.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+647.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 138->139
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 688.3597 92.8089 moveto
+682.5209 79.8338 675.8539 65.0183 670.2442 52.5521 curveto
+stroke
+0 0 0 edgecolor
+newpath 673.3033 50.8212 moveto
+666.0079 43.1382 lineto
+666.9199 53.6937 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 673.3033 50.8212 moveto
+666.0079 43.1382 lineto
+666.9199 53.6937 lineto
+closepath stroke
+grestore
+% 222
+gsave
+0 0 0.75294 nodecolor
+newpath 756.8457 43 moveto
+702.8457 43 lineto
+702.8457 7 lineto
+756.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 756.8457 43 moveto
+702.8457 43 lineto
+702.8457 7 lineto
+756.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+719.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 138->222
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 711.5373 92.8089 moveto
+715.0059 79.9623 718.9616 65.3115 722.3065 52.9231 curveto
+stroke
+0 0 0 edgecolor
+newpath 725.7207 53.7049 moveto
+724.9484 43.1382 lineto
+718.9626 51.8802 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 725.7207 53.7049 moveto
+724.9484 43.1382 lineto
+718.9626 51.8802 lineto
+closepath stroke
+grestore
+% 230
+gsave
+0 0 0.75294 nodecolor
+newpath 831.8457 43 moveto
+777.8457 43 lineto
+777.8457 7 lineto
+831.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 831.8457 43 moveto
+777.8457 43 lineto
+777.8457 7 lineto
+831.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+794.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 229->230
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 853.6681 92.8089 moveto
+844.0486 79.4484 833.024 64.1365 823.888 51.4476 curveto
+stroke
+0 0 0 edgecolor
+newpath 826.5887 49.2085 moveto
+817.9052 43.1382 lineto
+820.9079 53.2987 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 826.5887 49.2085 moveto
+817.9052 43.1382 lineto
+820.9079 53.2987 lineto
+closepath stroke
+grestore
+% 231
+gsave
+0 0 0.75294 nodecolor
+newpath 903.8457 43 moveto
+849.8457 43 lineto
+849.8457 7 lineto
+903.8457 7 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 903.8457 43 moveto
+849.8457 43 lineto
+849.8457 7 lineto
+903.8457 7 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+866.9336 20.8 moveto 19.8242 (\(...\)) alignedtext
+grestore
+% 229->231
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 876.8457 92.8089 moveto
+876.8457 80.0908 876.8457 65.6043 876.8457 53.2954 curveto
+stroke
+0 0 0 edgecolor
+newpath 880.3458 53.1382 moveto
+876.8457 43.1382 lineto
+873.3458 53.1383 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 880.3458 53.1382 moveto
+876.8457 43.1382 lineto
+873.3458 53.1383 lineto
+closepath stroke
+grestore
+% 237
+gsave
+0.56977 0.75109 0.89804 nodecolor
+newpath 1060.0588 50 moveto
+921.6326 50 lineto
+921.6326 0 lineto
+1060.0588 0 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 1060.0588 50 moveto
+921.6326 50 lineto
+921.6326 0 lineto
+1060.0588 0 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+953.8462 34.8 moveto 73.999 (samples = 20) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+949.5771 20.8 moveto 82.5371 (value = [0, 20]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+929.7393 6.8 moveto 122.2129 (class = GOODWARE) alignedtext
+grestore
+% 236->237
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 990.8457 192.8665 moveto
+990.8457 156.6865 990.8457 98.0654 990.8457 60.5429 curveto
+stroke
+0 0 0 edgecolor
+newpath 994.3458 60.0897 moveto
+990.8457 50.0897 lineto
+987.3458 60.0898 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 994.3458 60.0897 moveto
+990.8457 50.0897 lineto
+987.3458 60.0898 lineto
+closepath stroke
+grestore
+% 238
+gsave
+0.069767 0.75109 0.89804 nodecolor
+newpath 1193.5141 50 moveto
+1078.1773 50 lineto
+1078.1773 0 lineto
+1193.5141 0 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 1193.5141 50 moveto
+1078.1773 50 lineto
+1078.1773 0 lineto
+1193.5141 0 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1102.3462 34.8 moveto 66.999 (samples = 1) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1098.0771 20.8 moveto 75.5371 (value = [1, 0]) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1086.0117 6.8 moveto 99.668 (class = BANKER) alignedtext
+grestore
+% 236->238
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1014.1425 192.8665 moveto
+1040.8233 156.0654 1084.3373 96.0461 1111.4645 58.6293 curveto
+stroke
+0 0 0 edgecolor
+newpath 1114.6196 60.2403 moveto
+1117.6557 50.0897 lineto
+1108.9523 56.1314 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1114.6196 60.2403 moveto
+1117.6557 50.0897 lineto
+1108.9523 56.1314 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 1238 501
+end
+restore
+%%EOF

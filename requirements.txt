@@ -1,0 +1,4 @@
+numpy==1.14.6
+scikit_learn==0.21.2
+pandas==0.25.0
+androguard
