@@ -18,7 +18,7 @@ We also show that our novel TSG features have some interesting defensive propert
 
 We additionally identify the features that best separate and characterize ABTs from goodware as well as from other Android malware. Finally, we develop a detailed data-driven analysis of five major recent ABT families: FakeToken, Svpeng, Asacub, BankBot, and Marcher, and identify the features that best separate them from goodware and other malware.
 
-### Triadic Suspicion Graph (TSG) FEATURES
+### Triadic Suspicion Graph (TSG) Features
 
 Given a set B of Android banking trojans (ABTs), a set G of goodware, and the set A of all available Android API packages, the Triadic Suspicion Graph associated with B, G. TSG is a graph with three types of vertices: members of G, members of A and members of B. A triadic suspicion graph TSG contains the following kinds of edges.
 
@@ -31,8 +31,8 @@ Suspicion scores (SUS) and suspicion ranks (SR), which are associated with API p
 ### Datasets
 
 Links to datasets used in the paper:
-- [Goodware vs. Android Banking Trojans API Package Features](./good_banker_API.csv)
-- [Other-malware vs. Android Banking Trojans API Package Features](./other_banker_API.csv)
+- [Goodware vs. Android Banking Trojans API Package Features](https://github.com/Qian-Han/DBank/tree/master/TSG_features_classification/good_banker_API.csv)
+- [Other-malware vs. Android Banking Trojans API Package Features](https://github.com/Qian-Han/DBank/tree/master/TSG_features_classification/other_banker_API.csv)
 
 ### Code setup and Requirements
 
@@ -44,7 +44,7 @@ Recent versions of numpy, sklearn, pandas, and [androguard](https://androguard.r
 For security reason, we just release the extracted API Package features instead of the malware samples themselves. If you are cybersecurity researchers and want access to the samples, please send an email to qian.han.gr@dartmouth.edu explaining who you are and why you would like access.
 
 
-### Running the DBank code
+### Running DBank code
 
 #### Extract [API Package](https://developer.android.com/reference/packages) Features
 If you get Android APK samples, you can use API_Package_Feature_Extraction/GetFeatures.py to extract standard API package features. Before running the script, you need to do two modifications in GetFeatures.py.
@@ -56,7 +56,7 @@ Then running the script:
    $ python GetFeatures.py
 ```
 
-#### Get Triadic Suspicion Graph (TSG) and do cross-validation
+#### Get Triadic Suspicion Graph (TSG) features and do cross-validation
 
 To train and test the DBank model using the `TSG_features_classification/good_banker_API.csv` or `TSG_features_classification/other_banker_API.csv` dataset, use the following command.
 
